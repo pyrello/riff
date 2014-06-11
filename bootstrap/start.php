@@ -24,11 +24,22 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+$env = $app->detectEnvironment(function() use ($app)
+{
+    // You can set your environment by adding an 'environment.php' file to the /bootstrap folder
+    if (file_exists(__DIR__ . '/environment.php')) {
+        return require __DIR__ . '/environment.php';
 
-	'local' => array('homestead'),
+    // Or you can use the built-in method
+    } else {
+        $app->detectEnvironment(array(
+            // Set your environments here
+            'local' => array('homestead'),
 
-));
+        ));
+    }
+
+});
 
 /*
 |--------------------------------------------------------------------------
