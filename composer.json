@@ -4,7 +4,12 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*"
+        "anlutro/l4-settings": "dev-master",
+        "bllim/datatables": "*",
+        "laravel/framework": "4.2.*",
+        "msurguy/honeypot": "dev-master",
+        "zizaco/confide": "dev-master",
+        "zizaco/entrust": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
