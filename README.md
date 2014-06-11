@@ -1,4 +1,4 @@
-riff
+Riff
 ====
 
-Riff is a system for building music websites.
+Riff is a music website CMS.
