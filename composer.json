@@ -6,11 +6,20 @@
 	"require": {
         "anlutro/l4-settings": "dev-master",
         "bllim/datatables": "*",
+        "facebook/php-sdk-v4": "dev-master",
+        "fbf/laravel-pages": "dev-master",
+        "intervention/image": "2.*",
+        "intervention/imagecache": "2.*",
         "laravel/framework": "4.2.*",
+        "laravelbook/ardent": "@dev",
+        "liebig/cron": "dev-master",
         "msurguy/honeypot": "dev-master",
         "zizaco/confide": "dev-master",
         "zizaco/entrust": "dev-master"
 	},
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "1.*"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",

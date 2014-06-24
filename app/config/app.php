@@ -122,6 +122,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+        // Non-core providers
+        'anlutro\LaravelSettings\ServiceProvider',
+
 	),
 
 	/*
@@ -188,6 +191,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+
+        // Non-core aliases
+        'Setting'		  => 'anlutro\LaravelSettings\Facade',
 
 	),
 
